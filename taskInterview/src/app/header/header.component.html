@@ -1,0 +1,11 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#" data-abc="true">Resources</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <div class="form-group">
+            <input placeholder="yyyy-mm-dd"
+                   name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+            <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+          </div>
+        <form onsubmit="event.preventDefault()" class="form-inline my-2 my-lg-0"> <input class="mr-sm-2" type="text" placeholder="Search"> <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button> </form>
+    </div>
+
+</nav>
